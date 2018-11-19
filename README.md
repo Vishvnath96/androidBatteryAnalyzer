@@ -11,6 +11,9 @@ Battery used by app
 Major service running and its launch count
 Wakelock name and its count that were not released
 
+# Architecture
+
+
 # Visualization
 ![](https://github.com/Vishvnath96/androidBatteryAnalyzer/blob/res/for/integration/batteryusage.png)
 
