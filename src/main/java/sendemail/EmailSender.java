@@ -44,11 +44,8 @@ public class EmailSender {
         });
 
         MimeMessage message = new MimeMessage(session);
-        message.setFrom(new InternetAddress("batteryreport no-reply@makemytrip.com" + "<" + "no-reply@domain.com" + ">"));// change accordingly
-        message.addRecipients(Message.RecipientType.TO, "anuj.arora@go-mmt.com");
-        message.addRecipients(Message.RecipientType.TO, "ankit.gupta2@go-mmt.com");
-        message.addRecipients(Message.RecipientType.CC, "puneet.jain@go-mmt.com");
-        message.addRecipients(Message.RecipientType.CC,"vishvnath.singh@go-mmt.com");
+        message.setFrom(new InternetAddress("batteryreport no-reply@anyone.com" + "<" + "no-reply@domain.com" + ">"));// change accordingly
+        message.addRecipients(Message.RecipientType.TO, "anyone@anymail.com");
         message.setSubject(subject);
 
         SimpleDateFormat form = new SimpleDateFormat("hh:mm:ss:SS");
@@ -74,7 +71,6 @@ public class EmailSender {
         htmlbody.append("</br>");
         htmlbody.append("<font color=green>For Detailed Report kindly click below link:</font>");
         htmlbody.append(": ");
-        htmlbody.append("<a href=\"http://gmt.mmt.com:3000/dashboard/db/android-battery-usage-metrics?orgId=1&from=now%2Fd&to=now%2Fd&var-Device=Nexus-6&var-ApkVersion=7.3.1&var-Scenario=HalfnHour\">Click Grafana link</a></br>");
         htmlbody.append("</br>");
         htmlbody.append("<i>note* This is an auto generated email please don't reply.</i><br>");
         htmlbody.append("</br>");
