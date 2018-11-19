@@ -12,6 +12,9 @@ Major service running and its launch count
 Wakelock name and its count that were not released
 
 # Architecture
+![](https://github.com/Vishvnath96/androidBatteryAnalyzer/blob/res/for/integration/batteryArchitecture.png)
+
+battery run is scheduled with jenkins pipelines where we have made some precondition like before starting suite restart the device, clear batterystats and setusb 0 means device is not in charging state.
 
 
 # Visualization
