@@ -15,3 +15,5 @@ Wakelock name and its count that were not released
 ![](https://github.com/Vishvnath96/androidBatteryAnalyzer/blob/res/for/integration/batteryusage.png)
 
 Running services Info:
+
+![](https://github.com/Vishvnath96/androidBatteryAnalyzer/blob/res/for/integration/servicesinfobattery.png)
