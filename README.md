@@ -4,3 +4,9 @@ Battery Historian is a tool to inspect battery related information and events on
 here we are divided scenarios like half an hour/overnight and app idle cases and we run this suite like half an hour/one hour/over night from jenkins schehuled run and after the scenario we captured adb bugreport.
 
 Now we hit battery historian with captured bugreport as a parameter and store the response that is come from historian api and exoract the desired data like total consumption,running services  info, partial wakelock info/full wakelock info ,service count etc and send this data in opentsdb(we can also send this data in any other DB as per requirement) and visualize it on dashboard like grafana.
+
+
+What We are Capturing:
+Battery used by app
+Major service running and its launch count
+Wakelock name and its count that were not released
